@@ -1,0 +1,267 @@
+/* Variables Globales */
+
+html {
+    box-sizing: border-box;
+    p,
+    h1,
+    h2,
+    img,
+    iframe,
+    section,
+    div,
+    footer,
+    ul,
+    li {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    /* font-family: sans-serif; */
+}
+
+header {
+    width: 100%;
+}
+
+h1,
+h2 {
+    font-family: IBMPlexSans;
+    font-size: 36px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 42px;
+}
+
+p {
+    font-family: IBMPlexMono;
+    font-size: 14px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 22px;
+}
+
+#lista ul li {
+    font-size: $font1;
+}
+
+#btn-menu {
+    display: none;
+}
+
+header {
+    .menu-hamburguesa {
+        height: 44px;
+    }
+    label {
+        display: none;
+        width: 30px;
+        height: 30px;
+        padding: 10px;
+        border-right: 1px solid #ffffff;
+    }
+}
+
+header label:hover {
+    cursor: pointer;
+    background: rgba(0, 0, 0, .3);
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+  
+    border-right: 1px solid #ffffff;
+}
+
+.menu li:hover {
+    background: rgba(0, 0, 0, .3);
+}
+
+.menu li a {
+    display: block;
+    padding: 15px 20px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    header label {
+        display: block;
+    }
+    .menu {
+        position: absolute;
+        background: #4e94ab;
+        width: 70%;
+        margin-left: -70%;
+    }
+    .menu ul {
+        flex-direction: column;
+    }
+    .menu li {
+        border-top: 1px solid #ffffff;
+    }
+    #btn-menu:checked~.menu {
+        margin: 0;
+    }
+}
+
+
+/* Conetenedor Titulo */
+
+.titulo {
+    height: 303px;
+    padding: 29px 16px 24px;
+    h1 {
+        margin: 0;
+        height: 82px;
+    }
+    p {
+        margin-top: 16px;
+        height: 66px;
+        width: 288px;
+        text-align: justify;
+    }
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 36px;
+        height: 48px;
+        width: 100%;
+        background: #00F3BB;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+        color: #060A24;
+        letter-spacing: 0;
+        text-align: center;
+        line-height: 22px;
+    }
+}
+
+@media (min-width: 320px) {
+    header{
+      
+    
+        i{
+            float: left;
+            width: 36px;
+            height: 36px;
+            margin: 22px  0px 22px 100px ;
+        }
+        nav{
+            float: right;
+            display: block;
+            }
+          #lista{
+                display: flex;
+                justify-content: flex-end;
+                list-style: none;
+                border: none;    
+            } 
+    
+            .menu li a {
+                display: block;
+                padding: 15px 20px;
+                color: black;
+                text-decoration: none;
+                width: 87px;
+                height: 28px;
+                padding-right: 48px;
+                padding-top: 26px;
+            }
+            span{
+                margin-top: 120px;
+                align-items: center;
+                
+            }
+            .conoce-mas{
+                width: 226px;
+                height: 56px;
+            }
+            .titulo{
+                height: 369px;
+                margin-left: 200px;
+                margin-right: 518px;
+                padding: 0;
+                margin-top: 120px;
+            }
+            .titulo h1{
+                width: 740px;
+                height: 84px;
+                text-decoration: line-through; 
+                font-family: $font2;
+                font-size: 64px;
+                color: #060A24;
+                letter-spacing: 0;
+            }
+            .titulo p{
+                width: 628px;
+                height: 48px;
+                font-family: $font1;
+                font-size: 16px;
+                color: #060A24;
+                letter-spacing: 0;
+                line-height: 24px;
+                text-align: justify;
+            }
+            .titulo .conoce-mas{
+                height: 56px;
+                width: 226px;
+                display: block;
+                justify-content: center;
+                align-items: center;
+                font-family: $font1;
+                font-size: 18px;
+                background: #00F3BB;
+                margin-top: 56px;
+            }
+                a {
+                    width: 108px;
+                    height: 24px;
+                    font-size: 16px;
+                    font-family: $font1;
+                    text-transform: uppercase;
+                    letter-spacing: 0;
+                    text-align: center;
+                    line-height: 22px;
+                    color: #060A24;
+                    margin-top: 0;       
+                }
+    
+                li:nth-of-type(1) {
+                    margin-right: 48px;
+                }
+                li:nth-of-type(2) {
+                    margin-right: 48px;
+                }
+                li:nth-of-type(3) {
+                    margin-right: 48px;
+                }
+                li:nth-of-type(4) {
+                    margin-right: 100px;
+                }
+               
+            }
+                
+            }

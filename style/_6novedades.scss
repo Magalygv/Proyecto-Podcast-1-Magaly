@@ -1,0 +1,44 @@
+.novedades {
+    height: 341px;
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    clip-path: polygon(0 22%, 100% 0%, 100% 98%, 0% 100%);
+    h2 {
+        padding: 64px 16px 36px;
+        color: #ffffff;
+    }
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 16px;
+        height: 48px;
+        background: #00F3BB;
+        text-decoration: none;
+        font-weight: bold;
+        color: #060A24;
+    }
+}
+
+@media only screen and (min-width: 320px) {
+    .novedades{
+        max-width: 1440px;
+        max-height: 518px;
+
+        h2 {
+            width: 692px;
+            height: 62px;
+            margin: 0 374px 52px 374px;
+            text-align: center;
+        }
+
+        a {
+            width: 345px;
+            height: 56px;
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+            margin: 0 547px;
+        }
+    }
+    
+}
