@@ -10,29 +10,33 @@
     <link rel="stylesheet" href="style/style.css">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
     <header>
         <div class="menu-hamburguesa">
-            <input type="checkbox" id="btn-menu">
-            <label for="btn-menu"><i class="fas fa-bars"></i></label>
-            <i class="fas fa-podcast"></i>
-            <nav class="menu">
-                
-                <ul id="lista">
-                    <li><a href="">EPISODIOS</a></li>
-                    <li><a href="">NOSOTROS</a></li>
-                    <li><a href="">ENTREVISTAS</a></li>
-                    <li><a href="">TÓPICOS</a></li>
-                </ul>
+            <img src="/images/logo.svg" alt="logo">
+            <nav>
+                <div class="menu">
+                    <input type="checkbox" id="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul>
+                        <li><a href="#e">Episodios</a></li>
+                        <li><a href="#d">Nosotros</a></li>
+                        <li><a href="#i">Entrevistas</a></li>
+                        <li><a href="#a">Tópicos</a></li>
+                    </ul>
+                </div>
             </nav>
         </div>
-        <div class="titulo">
-             <h1><span>Hello</span><span>world</span><span>pale blue dot</span> </h1> 
-            <p>El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los jueves cada 15 días.</p>
+        <div class="titulo cont-lat16px">
+            <h1><span>Hello </span><span>world</span><span> pale blue dot</span> </h1>
+            <p id="movil">Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días.</p>
+            <p id="escritorio">El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los jueves cada 15 días.</p>
             <div class="conoce-mas"><a href="#">Conoce Más</a></div>
         </div>
     </header>
@@ -40,70 +44,70 @@
     <main>
 
         <section class="episodios">
-            <h2>Episodios</h2>
-            <iframe src="https://open.spotify.com/embed-podcast/episode/6eCHJ8yOYtksW8OT93Dbdu"  frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <iframe src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt"  frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <iframe src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD"  frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            <iframe src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ"  frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> 
+            <h2 id="e">Episodios</h2>
+            <div class="iframes"> <iframe src="https://open.spotify.com/embed-podcast/episode/6eCHJ8yOYtksW8OT93Dbdu"  frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe >  </div>
+            <div class="iframes"> <iframe src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt"  frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> </div>
+            <div class="iframes"> <iframe src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD"  frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> </div>
+            <div class="iframes"> <iframe src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ"  frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> </div>
             
         </section>
 
         <section class="de-donde-venimos">
-            <img src="/images/phone.png" alt="">
-            <div class="orientacion-vertical">
-                <h2>De dónde venimos</h2>
+            <img src="/images/phone.png" alt="imagencelular">
+           <div class="orientacion-vertical"> 
+                <h2 id="d">De dónde venimos</h2>
                 <p>Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light. <br><br> Our planet is a lonely speck in the great enveloping cosmic dark. In
                     our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
-            </div>
+            </div> 
         </section>
 
         <section class="invitadas">
-            <h2>Invitadas/os Estelares</h2>
+            <h2 id="i">Invitadas/os Estelares</h2>
             <div class="contentimages">
-                <img src="/images/image1.jfif" alt="">
-                <img src="/images/image2.jfif" alt="">
-                <img src="/images/image3.jfif" alt="">
-                <img src="/images/image4.jfif" alt="">
-                <img src="/images/image5.jfif" alt="">
-                <img src="/images/image6.jfif" alt="">
+                <img src="/images/image1.jfif" alt="grece">
+                <img src="/images/image2.jfif" alt="katie">
+                <img src="/images/image3.jfif" alt="margaret">
+                <img src="/images/image4.jfif" alt="eraunivac">
+                <img src="/images/image5.jfif" alt="operadores">
+                <img src="/images/image6.jfif" alt="susan">
             </div>
         </section>
 
         <section class="algunos-temas">
-            <h2>Algunos de nuestros temas</h2>
+            <h2 id="a">Algunos de nuestros temas</h2>
            
                 <div>
-                    <img src="/images/icon1.svg" alt="">
+                    <img src="/images/icon1.svg" alt="archivos">
                     <p>Trabajo remoto</p>
                 </div>    
                 <div>
-                    <img src="/images/icon2.svg" alt="">
+                    <img src="/images/icon2.svg" alt="cabeza">
                     <p>Repensando la <br> programación</p>
                 </div>       
                 <div>
-                    <img src="/images/icon3.svg" alt="">
+                    <img src="/images/icon3.svg" alt="computador">
                     <p>Bases del código</p>
                 </div>   
                 <div>
-                    <img src="/images/icon4.svg" alt="">
+                    <img src="/images/icon4.svg" alt="ramas">
                     <p>Seguridad informática</p>
                 </div>    
         </section>
 
         <section class="novedades">
-            <h2>¿Quieres las ultimas novedades?</h2>
-            <a href="#">Escuchá los Episodios</a>
+            <h2>¿Querés las ultimas novedades?</h2>
+             <a class="boton" href="#">Escuchá los Episodios</a>
         </section>
     </main>
 
     <footer>
-        <p>2020 - hello blue pale dot &copy;</p>
+        <p>© 2019— Hello blue pale dot </p>
         <div class="iconos-flex">
-            <i class="fab fa-spotify"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-facebook"></i>
-            <i class="fab fa-telegram"></i>
+            <a href="https://www.spotify.com/co/"><i class="fab fa-spotify"></i></a>
+            <a href="https://www.instagram.com/?hl=es-la"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/explore"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+            <a href="https://web.telegram.org/"><i class="fab fa-telegram"></i></a>
         </div>
     </footer>
 
